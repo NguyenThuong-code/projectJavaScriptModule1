@@ -44,8 +44,6 @@ showAlert(message, className){
     setTimeout(function(){
       document.querySelector('.alert').remove();
     }, 3000);
-   
-
    }
 
    clearFields(){
@@ -82,7 +80,7 @@ document.getElementById('product-form').addEventListener('submit', function(e){
   let productArray = [product1,product2];
   for(let i =0; i< productArray.length; i++){
     let p=productArray[i];
-   
+    
     display.addProductToList(p);
   }
 
@@ -112,7 +110,7 @@ let editPost=(td)=>{
     document.getElementById('describe').value=selectedRow.cells[2].innerHTML
     document.getElementById('price').value=selectedRow.cells[3].innerHTML
     document.getElementById('photo').value=selectedRow.cells[4].querySelector("img").src
-
+    td.parentElement.parentElement.remove();
 }
 
 
