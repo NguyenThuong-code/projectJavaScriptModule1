@@ -9,6 +9,6 @@ function validationFormLogIn(){
     }else if(email=== DEFAULT_EMAIL&&password===DEFAULT_PASSWORD){
         localStorage.setItem("email", DEFAULT_EMAIL)
         alert("Enter Successfully!");
-        window.location.href = 'http://127.0.0.1:5500/index.html';
+        window.location.href = 'https://62e7599d15b1306b2d893162--famous-melomakarona-99c9e2.netlify.app/';
     }
 }
